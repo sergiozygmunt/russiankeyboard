@@ -1,0 +1,319 @@
+
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <!-- ################################################################################
+             # Copyright (c) 2019 PowerSerg Data Systems Inc                                #
+             # All rights reserved                                                          #
+             # It's a clone of another site but with less  JavaScipt that breaks typing     #
+             ################################################################################ -->
+        <title>PowerSerg RussianLogos</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       
+        <style>
+            body{
+    margin: 0;
+}
+
+.warningBox {
+  width: 100%;
+  height: 75px;
+  
+  margin: 0 0 0 0;
+  background: #359ED5;
+
+}
+.logo {
+    margin-left: 1%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.info {
+    color: black;
+    margin-left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    
+    
+}
+
+p {
+    padding-right: 1%;
+}
+
+.infoHeader h1 {
+    font-weight: 700;
+    font-size: 18pt;
+    line-height: 50px;
+    
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.infoTableContainer {
+    
+    margin-right: 3%;
+    overflow-x: auto;
+}
+
+.infotable {
+    border-collapse: collapse;
+    width: 100%
+}
+    
+.bt, .bt:hover, .bt:visited {
+    text-decoration:none; 
+    cursor:pointer; 
+    font-size:18pt; 
+    color:#CC0033; 
+    font-family:Times New Roman, Arial;
+    }
+.cadr {
+    width:80%; 
+    color:#0000FF; 
+    font-family:Times New Roman, Arial; 
+    font-size:20pt; 
+    padding:5px; }
+.spgrey {
+     color: black; 
+     font-family:Times 
+     New Roman, Arial; 
+     font-size:120%; }
+</style>
+<link href="./russian_files/style.css" rel="stylesheet" type="text/css">
+<script async="" src=""></script><script src="./russian_files/base.js"></script>
+<script src="./russian_files/carru.js"></script>
+<script src="./russian_files/clipboard.js"></script>
+<!-- no Google Analytics -->
+</head>
+<div class="warningBox">
+        <img class="logo" alt="PowerSerg Logo" src="https://01110000011100110111001001100111.com/powerserg-ip-assets/logo/powerserg-white-singleword.svg" width="100">
+        </div>
+        <div class="info">
+        <h1 class="infoHeader">Russian Keyboard</h1>
+        </div>
+<body onload="conversion.saisie.focus()" cz-shortcut-listen="true">
+
+<div class="center"> 
+<noscript>
+<span class="span-red">Warning! JavaScript is disabled, the functionality of this website is unavailable.</span><br>
+You must enable JavaScript in your web browser: see the <a class="ext" href="https://www.enable-javascript.com/" target="_blank">instructions</a>.<br><br>
+</noscript>
+<br>
+<form name="conversion">
+<div class="delc">
+<br>
+ 
+<input type="button" class="eff" title="clear" onclick="reset();conversion.saisie.focus()" value="">
+</div>
+<textarea name="saisie" id="bar" onkeyup="transcrire()" rows="4" class="cadr"></textarea>
+<br>
+<br>
+<input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
+<script>
+var clipboard = new Clipboard('.bf');
+clipboard.on('success', function(e) {
+console.log(e); 
+});
+clipboard.on('error', function(e) {
+console.log(e);
+});
+</script>
+<input type="button" class="bf" onclick="alpha(&#39; &#39;)" value="space"><input type="button" onclick="conversion.saisie.rows=4;conversion.saisie.focus()" value="small frame" class="bf"><input type="button" onclick="conversion.saisie.rows=40;conversion.saisie.focus()" value="large frame" class="bf">
+<br><br> 
+<table class="tab-kb">
+<tbody><tr>
+<td>a</td>
+<td>b</td>
+<td>v</td>
+<td>g</td>
+<td>d</td>
+<td>e</td>
+<td>ë</td>
+<td>ž</td>
+<td>z</td>
+<td>i</td>
+<td>j</td>
+<td>k</td>
+<td>l</td>
+<td>m</td>
+<td>n</td>
+<td>o</td>
+</tr>
+<tr>
+<td><input type="button" value="А" onclick="alpha(&#39;А&#39;)" class="bt"></td>
+<td><input type="button" value="Б" onclick="alpha(&#39;Б&#39;)" class="bt"></td>
+<td><input type="button" value="В" onclick="alpha(&#39;В&#39;)" class="bt"></td>
+<td><input type="button" value="Г" onclick="alpha(&#39;Г&#39;)" class="bt"></td>
+<td><input type="button" value="Д" onclick="alpha(&#39;Д&#39;)" class="bt"></td>
+<td><input type="button" value="Е" onclick="alpha(&#39;Е&#39;)" class="bt"></td>
+<td><input type="button" value="Ё" onclick="alpha(&#39;Ё&#39;)" class="bt"></td>
+<td><input type="button" value="Ж" onclick="alpha(&#39;Ж&#39;)" class="bt"></td>
+<td><input type="button" value="З" onclick="alpha(&#39;З&#39;)" class="bt"></td>
+<td><input type="button" value="И" onclick="alpha(&#39;И&#39;)" class="bt"></td>
+<td><input type="button" value="Й" onclick="alpha(&#39;Й&#39;)" class="bt"></td>
+<td><input type="button" value="К" onclick="alpha(&#39;К&#39;)" class="bt"></td>
+<td><input type="button" value="Л" onclick="alpha(&#39;Л&#39;)" class="bt"></td>
+<td><input type="button" value="М" onclick="alpha(&#39;М&#39;)" class="bt"></td>
+<td><input type="button" value="Н" onclick="alpha(&#39;Н&#39;)" class="bt"></td>
+<td><input type="button" value="О" onclick="alpha(&#39;О&#39;)" class="bt"></td>
+</tr>
+<tr>
+<td><input type="button" value="а" onclick="alpha(&#39;а&#39;)" class="bt"></td>
+<td><input type="button" value="б" onclick="alpha(&#39;б&#39;)" class="bt"></td>
+<td><input type="button" value="в" onclick="alpha(&#39;в&#39;)" class="bt"></td>
+<td><input type="button" value="г" onclick="alpha(&#39;г&#39;)" class="bt"></td>
+<td><input type="button" value="д" onclick="alpha(&#39;д&#39;)" class="bt"></td>
+<td><input type="button" value="е" onclick="alpha(&#39;е&#39;)" class="bt"></td>
+<td><input type="button" value="ё" onclick="alpha(&#39;ё&#39;)" class="bt"></td>
+<td><input type="button" value="ж" onclick="alpha(&#39;ж&#39;)" class="bt"></td>
+<td><input type="button" value="з" onclick="alpha(&#39;з&#39;)" class="bt"></td>
+<td><input type="button" value="и" onclick="alpha(&#39;и&#39;)" class="bt"></td>
+<td><input type="button" value="й" onclick="alpha(&#39;й&#39;)" class="bt"></td>
+<td><input type="button" value="к" onclick="alpha(&#39;к&#39;)" class="bt"></td>
+<td><input type="button" value="л" onclick="alpha(&#39;л&#39;)" class="bt"></td>
+<td><input type="button" value="м" onclick="alpha(&#39;м&#39;)" class="bt"></td>
+<td><input type="button" value="н" onclick="alpha(&#39;н&#39;)" class="bt"></td>
+<td><input type="button" value="о" onclick="alpha(&#39;о&#39;)" class="bt"></td>
+</tr>
+</tbody></table> 
+<table class="tab-kb">
+<tbody><tr style="vertical-align:bottom;"> 
+<td>p</td>
+<td>r</td>
+<td>s</td>
+<td>t</td>
+<td>u</td>
+<td>f</td>
+<td>h</td>
+<td>c</td>
+<td>č</td>
+<td>š</td>
+<td>ŝ<br>
+šč</td>
+<td>ʺ</td>
+<td>y</td>
+<td>ʹ</td>
+<td>è</td>
+<td>û<br>
+ju</td>
+<td>â<br>
+ja</td>
+</tr>
+<tr>
+<td><input type="button" value="П" onclick="alpha(&#39;П&#39;)" class="bt"></td>
+<td><input type="button" value="Р" onclick="alpha(&#39;Р&#39;)" class="bt"></td>
+<td><input type="button" value="С" onclick="alpha(&#39;С&#39;)" class="bt"></td>
+<td><input type="button" value="Т" onclick="alpha(&#39;Т&#39;)" class="bt"></td>
+<td><input type="button" value="У" onclick="alpha(&#39;У&#39;)" class="bt"></td>
+<td><input type="button" value="Ф" onclick="alpha(&#39;Ф&#39;)" class="bt"></td>
+<td><input type="button" value="Х" onclick="alpha(&#39;Х&#39;)" class="bt"></td>
+<td><input type="button" value="Ц" onclick="alpha(&#39;Ц&#39;)" class="bt"></td>
+<td><input type="button" value="Ч" onclick="alpha(&#39;Ч&#39;)" class="bt"></td>
+<td><input type="button" value="Ш" onclick="alpha(&#39;Ш&#39;)" class="bt"></td>
+<td><input type="button" value="Щ" onclick="alpha(&#39;Щ&#39;)" class="bt"></td>
+<td><input type="button" value="Ъ" onclick="alpha(&#39;Ъ&#39;)" class="bt"></td>
+<td><input type="button" value="Ы" onclick="alpha(&#39;Ы&#39;)" class="bt"></td>
+<td><input type="button" value="Ь" onclick="alpha(&#39;Ь&#39;)" class="bt"></td>
+<td><input type="button" value="Э" onclick="alpha(&#39;Э&#39;)" class="bt"></td>
+<td><input type="button" value="Ю" onclick="alpha(&#39;Ю&#39;)" class="bt"></td>
+<td><input type="button" value="Я" onclick="alpha(&#39;Я&#39;)" class="bt"></td>
+</tr>
+<tr>
+<td><input type="button" value="п" onclick="alpha(&#39;п&#39;)" class="bt"></td>
+<td><input type="button" value="р" onclick="alpha(&#39;р&#39;)" class="bt"></td>
+<td><input type="button" value="с" onclick="alpha(&#39;с&#39;)" class="bt"></td>
+<td><input type="button" value="т" onclick="alpha(&#39;т&#39;)" class="bt"></td>
+<td><input type="button" value="у" onclick="alpha(&#39;у&#39;)" class="bt"></td>
+<td><input type="button" value="ф" onclick="alpha(&#39;ф&#39;)" class="bt"></td>
+<td><input type="button" value="х" onclick="alpha(&#39;х&#39;)" class="bt"></td>
+<td><input type="button" value="ц" onclick="alpha(&#39;ц&#39;)" class="bt"></td>
+<td><input type="button" value="ч" onclick="alpha(&#39;ч&#39;)" class="bt"></td>
+<td><input type="button" value="ш" onclick="alpha(&#39;ш&#39;)" class="bt"></td>
+<td><input type="button" value="щ" onclick="alpha(&#39;щ&#39;)" class="bt"></td>
+<td><input type="button" value="ъ" onclick="alpha(&#39;ъ&#39;)" class="bt"></td>
+<td><input type="button" value="ы" onclick="alpha(&#39;ы&#39;)" class="bt"></td>
+<td><input type="button" value="ь" onclick="alpha(&#39;ь&#39;)" class="bt"></td>
+<td><input type="button" value="э" onclick="alpha(&#39;э&#39;)" class="bt"></td>
+<td><input type="button" value="ю" onclick="alpha(&#39;ю&#39;)" class="bt"></td>
+<td><input type="button" value="я" onclick="alpha(&#39;я&#39;)" class="bt"></td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<table class="tab-kb">
+<tbody><tr> 
+<td><input type="button" class="bt" onclick="alpha(&#39;«&#39;)" value="«"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;»&#39;)" value="»"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;„&#39;)" value="„"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;“&#39;)" value="“"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;—&#39;)" value="—"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;…&#39;)" value="…"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;́&#39;)" value="́" title"accent"=""></td>
+</tr>
+</tbody></table>
+<br>
+<span class="pt">Deprecated Russian characters</span><br>
+<table class="tab-kb">
+<tbody><tr class="spgrey"> 
+<td>и</td>
+<td>е</td>
+<td>ф</td>
+<td>и</td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="alpha(&#39;І&#39;)" value="І"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;Ѣ&#39;)" value="Ѣ"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;Ѳ&#39;)" value="Ѳ"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;Ѵ&#39;)" value="Ѵ"></td>
+</tr>
+<tr>
+<td><input type="button" class="bt" onclick="alpha(&#39;і&#39;)" value="і"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;ѣ&#39;)" value="ѣ"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;ѳ&#39;)" value="ѳ"></td>
+<td><input type="button" class="bt" onclick="alpha(&#39;ѵ&#39;)" value="ѵ"></td>
+</tr>
+</tbody></table>
+<br>
+<p>change the font:</p> 
+<input type="button" class="bf" onclick="document.getElementById(&#39;bar&#39;).style.fontFamily=&#39;Times New Roman&#39;;" value="times new roman">
+<input type="button" class="bf" onclick="document.getElementById(&#39;bar&#39;).style.fontFamily=&#39;Calibri&#39;;" value="calibri">
+<input type="button" class="bf" onclick="document.getElementById(&#39;bar&#39;).style.fontFamily=&#39;Verdana&#39;;" value="verdana">
+</form>
+</div>
+<div class="espb"></div>
+<div class="pa"><b>Instructions</b> 
+<p>To type directly with the computer keyboard:</p> 
+<ul>
+<li> Type e= to add a diacritic signe: <span class="x">ë</span></li>
+<li> Type zh, ch, sh for <span class="x">ž, č, š</span></li>
+<li> Type w for <span class="x">šč</span> </li>
+<li> Type x for h, for example: sx for: <span class="x">сх</span> </li>
+<li> Type q after the vowel to add an acute accent (for learning Russian)</li>
+</ul>
+<br>
+<br>
+Copy [Ctrl]+[C] &amp; Paste [Ctrl]+[V] <br>
+<br>
+<br>
+
+</div>
+
+</tbody>
+</table>
+<br>
+<br>
+</footer>
+
+</body></html>
